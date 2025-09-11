@@ -1,0 +1,79 @@
+/* Container holding buttons and number display */
+.button {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: flex-end;
+  height: 400px;
+  border: 2px dashed #ccc;
+  position: relative; /* keeps number display positioned correctly */
+  padding-bottom: 20px; /* adds some breathing space at bottom */
+  background-color: #f9f9f9; /* soft background for container */
+}
+
+/* Hover and active effects */
+#inc:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+#dec:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+#reset:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+#inc:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+#dec:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+#reset:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* Lighter button colors */
+.increase-btn {
+  background-color: #fbd1e0; /* lighter pink */
+  height: 50px;
+  width: 100px;
+}
+
+.decrease-btn {
+  background-color: #cfe8fb; /* lighter blue */
+  height: 50px;
+  width: 100px;
+
+}
+
+.reset-btn {
+  background-color: #dff8d6; /* lighter green */
+  height: 50px;
+  width: 100px;
+}
+
+/* Number display styling */
+.number-display {
+  height: 200px;
+  width: 200px;
+  color: #333;
+  border: 2px dashed #888686;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 60px;
+  font-weight: bold;
+  background-color: #fafafa; /* softer background for number display */
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
