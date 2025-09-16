@@ -1,7 +1,7 @@
 function inc_dec() {
-    const button = document.querySelector(".button"); // fixed
+    const button = document.querySelector(".button");
     let num = 0;
-    const number = document.getElementById("number"); // make sure this exists in HTML
+    const number = document.getElementById("number"); 
 
     button.addEventListener('click', function (e) {
         if (e.target.tagName !== "BUTTON") return;
