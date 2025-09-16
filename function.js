@@ -1,6 +1,6 @@
 function inc_dec() {
     const button = document.querySelector(".button");
-    let num = 0;
+    let num = prompt("enter a no  ;) ");
     const number = document.getElementById("number"); 
 
     button.addEventListener('click', function (e) {
