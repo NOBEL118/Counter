@@ -4,8 +4,6 @@ function inc_dec() {
     const number = document.getElementById("number"); 
 
     button.addEventListener('click', function (e) {
-        if (e.target.tagName !== "BUTTON") return;
-
         if (e.target.id === "inc") {
             num += 1;
             number.innerText = num;        
